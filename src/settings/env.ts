@@ -9,8 +9,10 @@ const envSchema = z.object({
   DISCORD_POMODORO_CATEGORY_ID: z
     .string({ description: "Discord Pomodoro Category ID is required" })
     .min(1),
+  DISCORD_POMODORO_CHANNEL_ID: z
+    .string({ description: "Discord Pomodoro Channel ID is required" })
+    .min(1),
   DATABASE_URL: z.string({ description: "Database URL is required" }).min(1),
-  // Env vars...
 });
 
 type EnvSchema = z.infer<typeof envSchema>;

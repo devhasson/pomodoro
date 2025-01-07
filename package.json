@@ -18,13 +18,11 @@
     "@discordjs/voice": "^0.18.0",
     "@magicyan/discord": "^1.2.2",
     "@prisma/client": "6.1.0",
-    "bull": "^4.16.5",
     "chalk": "^5.3.0",
     "consola": "^3.2.3",
     "date-fns": "^4.1.0",
     "discord.js": "^14.16.3",
     "fast-glob": "^3.3.2",
-    "ioredis": "^5.4.2",
     "radix3": "^1.1.2",
     "zod": "^3.23.8"
   },

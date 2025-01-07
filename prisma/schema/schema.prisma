@@ -7,3 +7,26 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id       String   @id
+  username String   @unique
+  name     String
+  xp       Int      @default(0)
+  joinedAt DateTime @default(now()) @map("joined_at")
+
+  rankId String @map("rank_id")
+  rank   Rank   @relation(fields: [rankId], references: [id])
+
+  @@map("users")
+}
+
+model Rank {
+  id   String @id @default(cuid())
+  name String
+  xp   Int
+
+  users User[]
+
+  @@map("ranks")
+}

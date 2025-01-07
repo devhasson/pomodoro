@@ -28,6 +28,7 @@
 		"paths": {
 			"#database": ["./database/index.ts"],
 			"#base": ["./discord/base/index.ts"],
+			"#responders": ["./discord/responders/index.ts"],
 			"#functions": ["./functions/index.ts"],
 			"#menus": ["./menus/index.ts"],
 			"#settings": ["./settings/index.ts"],

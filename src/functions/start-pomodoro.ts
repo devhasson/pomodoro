@@ -67,5 +67,5 @@ export async function startPomodoro(voiceState: VoiceState) {
     }
 
     await startBreak(voiceState);
-  }, 1 * 10 * 1000);
+  }, 25 * 60 * 1000);
 }

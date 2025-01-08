@@ -11,7 +11,7 @@ export async function incrementPomodoroOnUser(userId: string) {
         increment: 25,
       },
       xp: {
-        increment: 70,
+        increment: 10,
       },
     },
     include: {

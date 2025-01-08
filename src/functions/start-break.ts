@@ -17,5 +17,5 @@ export async function startBreak(voiceState: VoiceState) {
     if (!channel.members.size || !channel.members.has(member.id)) return;
 
     await startPomodoro(voiceState);
-  }, 1 * 10 * 1000);
+  }, 5 * 60 * 1000);
 }

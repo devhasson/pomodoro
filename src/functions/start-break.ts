@@ -9,9 +9,7 @@ export async function startBreak(voiceState: VoiceState) {
 
   await member.user.createDM().then((dm) => {
     dm.send({
-      embeds: [
-        startingBreakEmbed(member.user.globalName || member.user.username),
-      ],
+      embeds: [startingBreakEmbed(member.user.displayName)],
     });
   });
 
@@ -19,5 +17,5 @@ export async function startBreak(voiceState: VoiceState) {
     if (!channel.members.size || !channel.members.has(member.id)) return;
 
     await startPomodoro(voiceState);
-  }, 5 * 60 * 1000);
+  }, 1 * 10 * 1000);
 }

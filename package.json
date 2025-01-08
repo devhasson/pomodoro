@@ -14,6 +14,9 @@
     "prestart": "prisma migrate deploy",
     "postinstall": "prisma generate"
   },
+  "prisma": {
+    "seed": "tsx --env-file .env ./prisma/schema/seed.ts"
+  },
   "dependencies": {
     "@discordjs/voice": "^0.18.0",
     "@magicyan/discord": "^1.2.2",
